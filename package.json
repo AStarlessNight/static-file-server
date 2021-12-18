@@ -1,0 +1,21 @@
+{
+  "name": "st-file-server",
+  "version": "1.1.1",
+  "description": "static file server",
+  "main": "render.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "filesize": "^8.0.6",
+    "moment": "^2.29.1",
+    "open": "^8.4.0",
+    "pug": "^3.0.2",
+    "yargs": "^17.3.0"
+  },
+  "bin": {
+    "st": "st-file-server.js"
+  }
+}

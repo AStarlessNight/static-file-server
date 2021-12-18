@@ -1,0 +1,48 @@
+
+style.
+  h1 {
+    position: sticky;
+    top: 0px;
+    background-color: #fff
+  }
+  td,th {
+      border: 1px solid rgb(190, 190, 190);
+      padding: 5px 10px;
+  }
+  td {
+      text-align: left;
+  }
+  th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+  } 
+  tr:nth-child(even) {
+      background-color: #eee;
+  }
+
+  table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200, 200, 200);
+      letter-spacing: 1px;
+      font-family: sans-serif;
+      //- font-size: .8rem;
+  }
+h1 Index of #{url}
+table
+  tbody
+    tr
+      th(scope="col") Size
+      th(scope="col") Change Time
+      th(scope="col") Name
+    
+    each entry in entries
+      tr
+        td #{entry.size}
+        td #{entry.ctime} 
+        td 
+          a(href=`${entry.href}`) #{entry.name + (entry.isFile() ? "" : "/")}
+footer
+  p 
+    span Node.js #{process.version} / 
+    a(href="https://github.com/AStarlessNight/static-file-server") static-file-server
+    span  Running @localhost:#{port}
