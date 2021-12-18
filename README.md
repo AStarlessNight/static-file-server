@@ -13,7 +13,7 @@ npm i -g st-file-server
 st [path] [options] 
 ```
 支持自定义打开端口，路径
-`[path]` 默认为 `./`
+`[path]` 默认为 `./`  
 `[options]` 可选 `-p` 后面加上端口号 (默认为8080端口)
 
 跳转 *http://localhost:8080*
