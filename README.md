@@ -16,16 +16,3 @@ st [path] [options]
 `[options]` 可选 `-p` 后面加上端口号 (默认为8080端口)
 
 跳转 *http://localhost:8080*
-
-## Details
-* **返回上级目录**  
-![Preview](./images/display2.png)
-
-* **禁止访问非根目录下的文件**  
-  ```javascript
-    if (!targetPath.startsWith(baseDir)) {
-        res.writeHead(401)
-        res.end("401 Unauthorized")
-        return
-    }
-  ```
